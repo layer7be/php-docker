@@ -54,3 +54,5 @@ COPY --from=build --chown=root:root /usr/lib/libzip.so.5 /usr/lib/libzip.so.5
 COPY --from=build --chown=root:root /usr/lib/libmemcached.so.11 /usr/lib/libmemcached.so.11
 COPY --from=build --chown=root:root /usr/lib/libsasl2.so.3 /usr/lib/libsasl2.so.3
 COPY --from=build --chown=root:root /usr/lib/libstdc++.so.6 /usr/lib/libstdc++.so.6
+
+EXPOSE 9000
