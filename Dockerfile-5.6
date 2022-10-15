@@ -55,4 +55,5 @@ COPY --from=build --chown=root:root /usr/lib/libmemcached.so.11 /usr/lib/libmemc
 COPY --from=build --chown=root:root /usr/lib/libsasl2.so.3 /usr/lib/libsasl2.so.3
 COPY --from=build --chown=root:root /usr/lib/libstdc++.so.6 /usr/lib/libstdc++.so.6
 
-EXPOSE 9000
+RUN rm -f /usr/src/php*
+RUN rm -rf /usr/local/include/php*
